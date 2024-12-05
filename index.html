@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Livros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Cadastro de Livros</h1>
+
+        <div class="form-container">
+            <h2>Cadastrar Livro</h2>
+            <input type="text" id="bookName" placeholder="Nome do Livro" required>
+            <input type="text" id="bookAuthor" placeholder="Autor do Livro" required>
+            <input type="text" id="bookGenre" placeholder="Gênero do Livro" required>
+            <button id="addBookBtn">Cadastrar Livro</button>
+        </div>
+
+        <div class="book-list">
+            <h2>Livros Cadastrados</h2>
+            <ul id="bookList">
+            
+            </ul>
+        </div>
+
+        <div class="edit-container">
+            <h2>Editar Livro</h2>
+            <input type="text" id="editBookName" placeholder="Novo Nome" required>
+            <input type="text" id="editBookAuthor" placeholder="Novo Autor" required>
+            <input type="text" id="editBookGenre" placeholder="Novo Gênero" required>
+            <button id="editBookBtn">Salvar Alterações</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
